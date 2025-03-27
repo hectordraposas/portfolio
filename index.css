@@ -121,6 +121,10 @@ main section {
   border-radius: 10px;
   overflow: hidden;
 }
+
+.tab-button {
+  font-family: "poppins, med";
+}
 /* myinfo */
 .myinfo {
   display: grid;
@@ -203,8 +207,14 @@ footer {
   justify-content: right;
 }
 .input-button button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
   width: 10rem;
   height: 4rem;
+  font-family: "poppins, med";
 }
 
 .footer-header {
