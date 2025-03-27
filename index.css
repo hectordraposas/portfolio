@@ -313,6 +313,14 @@ footer {
     cursor: pointer;
     padding: 2rem;
   }
+
+  /* .landing-wrapper */
+  .landing-wrapper {
+    padding: 1rem;
+  }
+  .tab-content {
+    padding: 1rem;
+  }
   /* footer */
   .footer-body {
     display: block;
