@@ -124,9 +124,13 @@ main section {
 /* myinfo */
 .myinfo {
   display: grid;
-  grid-template-columns: 50rem, 1fr;
-  background-color: red;
+  grid-template-columns: 20rem 1fr;
 }
+
+.myinfo div {
+  padding-bottom: 2rem;
+}
+
 /* ====footerr*/
 footer {
   padding: 2rem 2rem 2rem 2rem;
