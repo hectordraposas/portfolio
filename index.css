@@ -122,7 +122,7 @@ main section {
 }
 /* ====footerr*/
 footer {
-  padding: 2rem 10rem 10rem 10rem;
+  padding: 2rem 2rem 2rem 2rem;
   background-color: dimgrey;
   border-top: 5px solid aquamarine;
   color: aliceblue;
@@ -130,13 +130,19 @@ footer {
 
 .footer-header {
   text-align: center;
-  padding: 5rem;
 }
 
 .footer-body {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 10px;
+}
+
+.row--1,
+.row--2,
+.row--3 {
+  width: 100%;
+  padding: 1rem;
 }
 
 /* ====main */
