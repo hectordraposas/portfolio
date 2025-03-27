@@ -193,7 +193,7 @@ main section {
   bottom: -40px;
   background-color: rgb(66, 64, 64);
   z-index: -1;
-  animation: fillLine 1s ease-in-out forwards; /* Animation */
+  animation: fillLine 1s ease-in-out forwards;
 }
 @keyframes fillLine {
   from {
