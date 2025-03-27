@@ -87,6 +87,7 @@ main section {
   -webkit-backdrop-filter: blur(0px) saturate(128%);
   background-color: rgba(255, 253, 253, 0.8);
   border-top: 5px solid aquamarine;
+  transition: all 0.3s ease-in-out;
 }
 .tabs {
   display: flex;
