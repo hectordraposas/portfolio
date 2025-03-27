@@ -144,7 +144,7 @@ main section {
   justify-content: center;
   align-items: center;
 }
-.myinfo div:nth-child(1):before {
+.myinfo div:nth-child(1)::before {
   content: "";
   position: absolute;
   display: block;
@@ -154,11 +154,11 @@ main section {
   left: -30px;
   background-color: green;
 }
-.myinfo div:nth-child(1):after {
+.myinfo div:nth-child(1)::after {
   content: "";
   position: absolute;
   display: block;
-  height: 50px;
+  height: 40px;
   width: 2px;
   left: 1.5px;
   bottom: -40px;
@@ -171,7 +171,7 @@ main section {
   justify-content: center;
   align-items: center;
 }
-.myinfo div:nth-child(3n + 1):before {
+.myinfo div:nth-child(3n + 1)::before {
   content: "";
   position: absolute;
   display: block;
@@ -182,18 +182,27 @@ main section {
   background-color: green;
 }
 
-.myinfo div:nth-child(3n + 1):after {
+.myinfo div:nth-child(3n + 1)::after {
   content: "";
   position: absolute;
   display: block;
-  height: 50px;
+  height: 0;
+  top: 0;
   width: 2px;
   left: 1.5px;
   bottom: -40px;
   background-color: rgb(66, 64, 64);
   z-index: -1;
+  animation: fillLine 1s ease-in-out forwards; /* Animation */
 }
-
+@keyframes fillLine {
+  from {
+    height: 0;
+  }
+  to {
+    height: 80px; /* Adjust height as needed */
+  }
+}
 /* ====footerr*/
 footer {
   padding: 2rem 2rem 2rem 2rem;
