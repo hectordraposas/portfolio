@@ -28,9 +28,8 @@ nav {
   padding: 2.5rem;
   align-items: center;
   justify-content: space-between;
-  background-color: cornflowerblue;
+  background-color: #007300;
   color: white;
-  border-bottom: 5px solid aqua;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -42,10 +41,10 @@ nav figure {
 }
 
 nav figure:hover {
-  background-color: aquamarine;
-  color: black;
+  background-color: #80c080;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
+  color: #007300;
 }
 
 nav ul {
@@ -56,9 +55,9 @@ nav ul {
 }
 
 nav ul li:hover {
-  background-color: aquamarine;
+  background-color: #80c080;
   transition: all 0.3s ease-in-out;
-  color: black;
+  color: #007300;
   border-radius: 10px;
 }
 
@@ -86,7 +85,7 @@ main section {
   backdrop-filter: blur(0px) saturate(128%);
   -webkit-backdrop-filter: blur(0px) saturate(128%);
   background-color: rgba(255, 253, 253, 0.8);
-  border-top: 5px solid aquamarine;
+  border-top: 5px solid #1a8d1a;
   transition: all 0.3s ease-in-out;
 }
 .tabs {
@@ -95,9 +94,9 @@ main section {
   margin-top: 0.3rem;
 }
 .tab-button.active {
-  background-color: green;
+  background-color: #007300;
   border-radius: 10px;
-  box-shadow: 0px 1px 1px 1px dimgrey;
+  color: #f0f0f0;
 }
 .tab-content.active {
   display: block;
@@ -124,6 +123,13 @@ main section {
 
 .tab-button {
   font-family: "poppins, med";
+  transition: all 0.3s ease-in-out;
+}
+
+.tab-button:hover {
+  background-color: #e6f2e6;
+  border-radius: 5px;
+  color: #007300;
 }
 /* myinfo */
 .myinfo {
@@ -206,7 +212,7 @@ main section {
 /* ====footerr*/
 footer {
   padding: 2rem 2rem 2rem 2rem;
-  background-color: dimgrey;
+  background-color: #007300;
   border-top: 5px solid aquamarine;
   color: aliceblue;
 }
@@ -281,7 +287,7 @@ footer {
   border: none;
   outline: none;
   cursor: pointer;
-  background-color: green;
+  background-color: #008000;
   color: white;
   width: 10rem;
   height: 4rem;
