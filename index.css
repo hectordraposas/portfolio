@@ -201,6 +201,11 @@ main section {
   z-index: -1;
   animation: fillLine 1s ease-in-out forwards;
 }
+
+.myinfo div:nth-child(3n-1) {
+  color: #007300;
+}
+
 @keyframes fillLine {
   from {
     height: 0;
@@ -362,13 +367,23 @@ footer {
     padding-top: 2rem;
     width: 0px;
   }
-
+  nav figure:hover {
+    background-color: #80c080;
+    border-radius: 0;
+    transition: all 0.3s ease-in-out;
+    color: #007300;
+  }
   nav ul {
     display: block;
     transition: all 0.3s ease;
     padding: 0px;
   }
-
+  nav ul li:hover {
+    background-color: #80c080;
+    transition: all 0.3s ease-in-out;
+    color: #007300;
+    border-radius: 0;
+  }
   nav ul li,
   nav figure {
     text-align: center;
@@ -415,12 +430,12 @@ footer {
   }
   .row--1 h4 {
     text-align: center;
-    color: aliceblue;
+    color: #007300;
   }
   .row--1 {
     padding: 5rem;
     text-align: center;
-    color: aliceblue;
+    color: #007300;
   }
   .row--2 {
     padding: 1rem;
@@ -428,12 +443,12 @@ footer {
     flex-direction: column;
     gap: 2rem;
     text-align: center;
-    color: aliceblue;
+    color: #007300;
   }
   .row--3 {
     padding: 5rem;
     text-align: center;
-    color: aliceblue;
+    color: #007300;
   }
 
   .row--3 span {
