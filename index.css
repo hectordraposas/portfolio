@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "poppins, med";
+  src: url(fonts/Poppins-Medium.ttf);
+  font-size: normal;
+  font-weight: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "poppins, med";
+  font-size: 1.5rem;
+}
+.close-nav {
+  display: none;
+}
+/* ====nav */
+
+nav {
+  display: flex;
+  padding: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: cornflowerblue;
+  color: white;
+  border-bottom: 5px solid aqua;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav figure {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+nav figure:hover {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: aquamarine;
+  transition: all 0.3s ease-in-out;
+  color: black;
+  border-radius: 10px;
+}
+
+nav ul li {
+  padding: 1rem;
+}
+.nav-button {
+  display: none;
+}
+.nav-open {
+  width: 100%;
+}
+/* ====section */
+
+main section {
+  padding-top: 11rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image: url(images/gradient.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+.landing-wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  backdrop-filter: blur(0px) saturate(128%);
+  -webkit-backdrop-filter: blur(0px) saturate(128%);
+  background-color: rgba(255, 253, 253, 0.8);
+  border-top: 5px solid aquamarine;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.tab-button.active {
+  background-color: green;
+  border-radius: 10px;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content {
+  padding: 5rem;
+  display: none;
+}
+.tab-content h1 {
+  text-align: center;
+}
+.tabs button {
+  width: 100%;
+  padding: 1rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.tabs button:hover {
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+/* ====footerr*/
+footer {
+  padding: 2rem 10rem 10rem 10rem;
+  background-color: dimgrey;
+  border-top: 5px solid aquamarine;
+  color: aliceblue;
+}
+
+.footer-header {
+  text-align: center;
+  padding: 5rem;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* ====main */
+
+@media (max-width: 650px) {
+  main section {
+    padding: 0px;
+    transition: all 0.3s ease-in-out;
+  }
+  nav {
+    display: block;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100vh;
+    padding: 0px;
+    padding-top: 2rem;
+    width: 0px;
+  }
+
+  nav ul {
+    display: block;
+    transition: all 0.3s ease;
+    padding: 0px;
+  }
+
+  nav ul li,
+  nav figure {
+    text-align: center;
+  }
+  .nav-button {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 5px;
+    width: 5rem;
+  }
+  .nav-button span {
+    width: 4rem;
+    height: 0.6rem;
+    background-color: red;
+    display: block;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .nav-button:hover span {
+    box-shadow: 1px 1px 5px 1px green;
+    transition: all 0.3s ease;
+  }
+
+  .close-nav {
+    display: block;
+    text-align: right;
+    padding-right: 10px;
+    cursor: pointer;
+    padding: 2rem;
+  }
+  .footer-body {
+    display: block;
+  }
+
+  .row--1 {
+    padding: 5rem;
+    text-align: center;
+    color: aliceblue;
+  }
+  .row--2 {
+    padding: 5rem;
+    text-align: center;
+    color: aliceblue;
+  }
+  .row--3 {
+    padding: 5rem;
+    text-align: center;
+    color: aliceblue;
+  }
+}
