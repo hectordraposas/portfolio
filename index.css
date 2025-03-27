@@ -213,7 +213,7 @@ main section {
 footer {
   padding: 2rem 2rem 2rem 2rem;
   background-color: #007300;
-  border-top: 5px solid aquamarine;
+  border-top: 0.5rem solid #f0f0f0;
   color: aliceblue;
 }
 
@@ -383,13 +383,13 @@ footer {
   .nav-button span {
     width: 4rem;
     height: 0.6rem;
-    background-color: red;
+    background-color: #008000;
     display: block;
     border-radius: 2px;
     cursor: pointer;
   }
   .nav-button:hover span {
-    box-shadow: 1px 1px 5px 1px green;
+    box-shadow: 1px 1px 5px 1px #80c080;
     transition: all 0.3s ease;
   }
 
