@@ -121,6 +121,12 @@ main section {
   border-radius: 10px;
   overflow: hidden;
 }
+/* myinfo */
+.myinfo {
+  display: grid;
+  grid-template-columns: 50rem, 1fr;
+  background-color: red;
+}
 /* ====footerr*/
 footer {
   padding: 2rem 2rem 2rem 2rem;
