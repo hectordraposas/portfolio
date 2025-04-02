@@ -233,13 +233,13 @@ footer {
 }
 .input-name input:focus + label,
 .input-name input:valid + label {
-  top: -1.2rem;
+  top: -0.9rem;
   color: #007300;
   left: 5px;
 }
 .input-user textarea:focus + label,
 .input-user textarea:valid + label {
-  top: -1.2rem;
+  top: -0.5rem;
   color: #007300;
   left: 5px;
 }
