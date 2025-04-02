@@ -158,52 +158,13 @@ main section {
   width: 5px;
   border-radius: 50%;
   left: -30px;
-  background-color: green;
 }
-.myinfo div:nth-child(1)::after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 40px;
-  width: 2px;
-  left: 1.5px;
-  bottom: -40px;
-  background-color: red;
-  z-index: -1;
-}
+
 .myinfo div:nth-child(3n + 1) {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.myinfo div:nth-child(3n + 1)::before {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  left: 0;
-  background-color: green;
-}
-
-.myinfo div:nth-child(3n + 1)::after {
-  content: "";
-  position: absolute;
-  display: block;
-  height: 0;
-  top: 0;
-  width: 2px;
-  left: 1.5px;
-  bottom: -40px;
-  background-color: rgb(66, 64, 64);
-  z-index: -1;
-  animation: fillLine 1s ease-in-out forwards;
-}
-
-.myinfo div:nth-child(3n-1) {
-  color: #007300;
 }
 
 @keyframes fillLine {
