@@ -42,6 +42,7 @@ tabBtn.forEach((buttons) => {
 showModal.addEventListener("click", function () {
   joinUsModal.classList.add("joinus-modal-active");
   document.body.style.overflow = "hidden";
+  nav.classList.toggle("nav-open");
 });
 
 modaClose.addEventListener("click", function () {

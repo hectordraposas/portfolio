@@ -128,6 +128,7 @@ main section {
   cursor: pointer;
 }
 .button-left button {
+  position: absolute;
   display: block;
   width: 6rem;
   height: 6rem;
@@ -136,8 +137,34 @@ main section {
   color: white;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 1px 1px 15px rgb(24, 243, 4);
+  border: 2px solid white;
+  transition: all 0.3s ease;
 }
-
+.button-left button:hover {
+  color: #007300;
+  background-color: white;
+  border: 2px solid #007300;
+}
+.button-right button {
+  position: absolute;
+  display: block;
+  width: 6rem;
+  height: 6rem;
+  background: #007300;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px rgb(24, 243, 4);
+  border: 2px solid white;
+  transition: all 0.3s ease;
+}
+.button-right button:hover {
+  color: #007300;
+  background-color: white;
+  border: 2px solid #007300;
+}
 .dots {
   display: flex;
   gap: 1rem;
@@ -162,16 +189,6 @@ main section {
   cursor: pointer;
 }
 
-.button-right button {
-  display: block;
-  width: 6rem;
-  height: 6rem;
-  background: #007300;
-  border: none;
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-}
 .button-right {
   position: absolute;
   display: flex;
@@ -189,20 +206,29 @@ main section {
   background-image: url(images/banner/b2.jpg);
   background-size: cover;
   scale: 0.8;
+  border-radius: 16px;
 }
 .my-photo .pic:nth-child(2) {
+  width: 65%;
   transform: translateX(0);
   background-image: url(images/me.png);
   background-size: cover;
   z-index: 999;
+  border-radius: 16px;
+}
+.my-photo .pic:hover {
+  box-shadow: 1px 1px 25px #aee4ae;
 }
 .my-photo .pic:nth-child(3) {
   transform: translateX(-100%);
   background-image: url(images/banner/b3.jpg);
   background-size: cover;
   scale: 0.8;
+  border-radius: 16px;
 }
-
+.my-photo .pic {
+  border: 2px solid white;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -601,6 +627,9 @@ footer {
     width: 100%;
     height: 100vh;
     margin: auto 0;
+  }
+  .my-photo .pic:nth-child(2) {
+    width: 100%;
   }
   .button-right button {
     display: none;
