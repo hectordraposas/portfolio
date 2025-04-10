@@ -135,7 +135,6 @@ main section {
   border: none;
   color: white;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px red;
   cursor: pointer;
 }
 
@@ -171,7 +170,6 @@ main section {
   border: none;
   color: white;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px red;
   cursor: pointer;
 }
 .button-right {
@@ -248,6 +246,11 @@ main section {
   background-color: #007300;
   border: none;
   color: white;
+  cursor: pointer;
+}
+.hero .hero-cta button a {
+  text-decoration: none;
+  color: #e6f2e6;
 }
 .hero .hero-text {
   display: flex;
