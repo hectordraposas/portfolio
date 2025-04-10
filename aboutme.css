@@ -192,6 +192,7 @@ footer {
 .input-user {
   position: relative;
   width: 100%;
+  z-index: 999;
 }
 .input-user textarea {
   border: none;
@@ -218,6 +219,7 @@ footer {
 
 .input-name {
   position: relative;
+  z-index: 999;
 }
 .input-user label {
   position: absolute;
@@ -227,6 +229,7 @@ footer {
   left: 5px;
   color: grey;
   transition: all 0.3s ease-in-out;
+  z-index: -1;
 }
 .input-name label {
   position: absolute;
@@ -236,10 +239,11 @@ footer {
   left: 5px;
   color: grey;
   transition: all 0.3s ease-in-out;
+  z-index: -1;
 }
 .input-name input:focus + label,
 .input-name input:valid + label {
-  top: -0.9rem;
+  top: -1rem;
   color: #007300;
   left: 5px;
 }
