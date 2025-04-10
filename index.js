@@ -7,11 +7,17 @@ const nav = document.querySelector("nav");
 const tabBtn = document.querySelectorAll(".tab-button");
 const tab = document.querySelectorAll(".tab-content");
 
+const showModal = document.querySelector(".show-modal");
+const joinUsModal = document.querySelector(".joinus-modal");
+const modaClose = document.querySelector(".modal-close");
+
 btnOpen.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
+  document.body.style.overflow = "hidden";
 });
 btnClose.addEventListener("click", function () {
   nav.classList.toggle("nav-open");
+  document.body.style.overflow = "auto";
 });
 
 tabBtn.forEach((buttons) => {
@@ -31,4 +37,14 @@ tabBtn.forEach((buttons) => {
       selectedTab.classList.add("active");
     }
   });
+});
+
+showModal.addEventListener("click", function () {
+  joinUsModal.classList.add("joinus-modal-active");
+  document.body.style.overflow = "hidden";
+});
+
+modaClose.addEventListener("click", function () {
+  joinUsModal.classList.remove("joinus-modal-active");
+  document.body.style.overflow = "auto";
 });
