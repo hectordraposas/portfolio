@@ -128,6 +128,7 @@ main section {
   cursor: pointer;
 }
 .button-left button {
+  display: block;
   width: 6rem;
   height: 6rem;
   background: #007300;
@@ -163,6 +164,7 @@ main section {
 }
 
 .button-right button {
+  display: block;
   width: 6rem;
   height: 6rem;
   background: #007300;
@@ -192,7 +194,7 @@ main section {
 }
 .my-photo .pic:nth-child(2) {
   transform: translateX(0);
-  background-image: url(images/banner/b1.jpg);
+  background-image: url(images/me.png);
   background-size: cover;
   z-index: 999;
 }
@@ -467,6 +469,7 @@ footer {
 
   /* .landing-wrapper */
   .landing-wrapper {
+    height: 150vh;
     display: flex;
     flex-direction: column;
   }
@@ -477,8 +480,14 @@ footer {
   .my-photo {
     width: 100%;
     height: 100vh;
+    margin: auto 0;
   }
-
+  .button-right button {
+    display: none;
+  }
+  .button-left button {
+    display: none;
+  }
   .hero .hero-text {
     display: flex;
     flex-direction: column;
